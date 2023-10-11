@@ -1,0 +1,119 @@
+*{
+    font-family: 'Nova Round', cursive;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.navbar{
+    position: absolute !important;
+    left: 20px;
+    right: 20px;
+}
+.heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.button{
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button:hover,
+.button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button:active {
+  opacity: .5;
+}
+
+@media (max-width:618px) {
+    .heading{
+        top: 24%;
+        font-size: 1rem;
+    }  
+    .navbar{
+        position: absolute !important;
+        top: 0px;
+        right: 0px;
+    } 
+    .button{
+        width: fit-content;
+    }
+    .cards{
+        margin-top: 200px !important;
+     }
+}
+@media (max-width:783px){
+ .row{
+    flex-direction: column;
+ }
+ .col{
+    margin: 10px;
+ }
+ 
+}
+h4{
+    font-family: 'Teko', sans-serif;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: #000;
+}
+::-webkit-scrollbar-track{
+    width: 10px;
+    background-color: red;
+}
+.cards{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    margin-top: 20px;
+}
+.formcontrol{
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #FF4742;
+}
+.contai{
+    margin: 20px;
+}
+.ftheading{
+    color: aqua;
+}
+.ftheading:hover{
+    color: #FF4742;
+}
